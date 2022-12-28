@@ -1,0 +1,112 @@
+<div id = "popup" class = "hidden modal">
+
+  <!--<a href="  link " target="_blank"> -->
+  
+  <!--<image src=" image url " alt=”   ” > </a>-->
+<div class="modal-footer">
+  
+
+           <button type="button" class="btn btn-default" id='close' data-dismiss="modal">X</button>
+<br>
+  </div>
+<br>
+
+      <img src="../Avala Hejje job fair poster - Kannada.jpeg" alt="Poster"> 
+  
+   <!--<h2> <p style="color:red;">   <a href=" link ”  target="_blank" >
+  
+   Book Now  </a>  </p>  </h2>-->
+  <br>
+    
+  
+  </div>
+  
+   
+  
+  <style>
+  
+  #popup {
+  
+    display: inline-block;
+  
+    opacity: 0;
+  
+    position: fixed;
+  
+    top: 10%;
+  
+    left: 50%;
+  
+    padding: 1.3em;
+  
+    transform: translateX(-50%);
+  
+    background: #fff;
+  
+    border: 1px solid #68228b;
+  
+    box-shadow: 1px 1px .5em 0 rgba(0, 0, 0, .5);
+  
+    transition: opacity .3s ease-in-out;
+  
+    z-index:999999;
+  
+  }
+  
+   
+
+  #popup.hidden {
+  
+    display: none;
+  
+  }
+  
+  #popup.fade-in {
+  
+    opacity: 19;
+  
+  }
+  
+  </style>
+  
+  <script>
+  
+  window.onload = function () {
+  
+    /* Cache the popup. */
+  
+    var popup = document.getElementById("popup");
+  
+   
+  
+    /* Show the popup. */
+  
+    popup.classList.remove("hidden");
+  
+   
+  
+    /* Fade the popup in */
+  
+    setTimeout(()=>popup.classList.add("fade-in"));
+  
+   
+  
+   /* Close the popup when a city is selected. */
+  
+    document.getElementById("close").onclick = function () {
+  
+       /* Fade the popup out */
+  
+       popup.classList.remove("fade-in");
+  
+      
+  
+       /* Hide the popup. */
+  
+       setTimeout(()=>popup.classList.add("hidden"), 300);
+  
+    };
+  
+  };
+  
+  </script>

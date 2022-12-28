@@ -1,0 +1,49 @@
+body {
+    background-color: #eee;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    /*background-color: #ffb90f;*/
+    background-image: url("tellowbg.png");
+    border: 2px solid;
+    border-color: #eee;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+#msgDiv {
+   /*display: none;*/
+   background-color: rgba(146, 32, 32, 0.067)
+}
+
+#msgDiv1 {
+    /*display: none;*/
+    background-color: rgba(146, 32, 32, 0.067)
+ }
+
+.top-buffer { margin-top:55px; }
+
+.upload_center {
+    margin: auto;
+    width: 50%;
+    border: 2px solid;
+    /*border-color: #68228b;*/
+    border-color: #eee;
+    background-image: url("tellowbg.png");
+    padding: 10px;
+    border-radius: 0.3em;
+  }
+
+.button_custom {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    align-content: center;
+}
